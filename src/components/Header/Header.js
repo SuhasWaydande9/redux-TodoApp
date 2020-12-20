@@ -4,7 +4,7 @@ import "./Header.css";
 function Header(){
     return(
         <div className="main-Nav">
-            <p>My Todo's</p>
+            <p>Todo's App</p>
         </div>
     )
 }

@@ -1,0 +1,58 @@
+.Todo-Container {
+  max-width: 900px;
+  width: 70vw;
+  margin: 0px auto;
+}
+
+.TODO {
+  border: 0.05px solid #4093ff;
+  border-radius: 10px 10px 0px 10px;
+  margin: 25px 0px;
+}
+
+.main-todo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  height: 40px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-bottom: 0.05px solid #4093ff;
+  border-radius: 10px 10px 0px 10px;
+}
+
+.main-todo .todo-buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 60px;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.main-todo .todo-buttons button {
+  border-style: none;
+  width: 20px;
+  height: 20px;
+}
+
+.main-todo .todo-buttons .dropDownButton {
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+.child-todos > .TODO > .main-todo {
+  width: 80%;
+  /* display: flex; */
+  margin: 0px auto;
+  border: none !important;
+}
+
+.child-todos > .TODO {
+  border: none;
+  margin: 15px 0px;
+}
+/*# sourceMappingURL=Todo.css.map */
