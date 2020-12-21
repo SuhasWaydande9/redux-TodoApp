@@ -1,0 +1,17 @@
+.Adder {
+  margin: 15px 0px;
+}
+
+.Adder input {
+  width: 70%;
+  height: 35px;
+  background-color: #ECF2FF;
+  border: 0.5px solid #4093ff;
+  border-radius: 10px 0px 0px 10px;
+}
+
+.Adder button {
+  width: 30px;
+  height: 35px;
+}
+/*# sourceMappingURL=Adder.css.map */
