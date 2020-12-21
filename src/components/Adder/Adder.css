@@ -8,6 +8,8 @@
   background-color: #ECF2FF;
   border: 0.5px solid #4093ff;
   border-radius: 10px 0px 0px 10px;
+  padding: 0px 15px;
+  font-size: 20px;
 }
 
 .Adder button {
