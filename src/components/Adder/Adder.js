@@ -4,7 +4,7 @@ import { useState } from "react";
 import { useDispatch } from "react-redux"
 
 //Redux-Actions
-import {Add_Todo} from "../../redux/reducers/TodosReducer"
+import {Add_Todo, Save} from "../../redux/reducers/TodosReducer"
 
 
 function Adder(){
@@ -18,8 +18,9 @@ function Adder(){
         <div className="Adder">
             <input onChange={handleChange} className="Add-Text" type={text} required={true}></input>
             <button onClick={()=>{
-                if(text != ""){
+                if(text !== ""){
                     dispatch(Add_Todo({name:text}));
+                    dispatch(Save());
                     document.querySelector(".Add-Text").value = "";
                     setText("");
                 }

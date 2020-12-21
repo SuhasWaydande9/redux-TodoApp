@@ -1,11 +1,11 @@
 .Todo-Container {
   max-width: 900px;
-  width: 70vw;
+  width: 80vw;
   margin: 0px auto;
 }
 
 .TODO {
-  border: 0.05px solid #4093ff;
+  border: 1px solid #4093ff;
   border-radius: 10px 10px 0px 10px;
   margin: 25px 0px;
 }
@@ -16,12 +16,15 @@
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  height: 40px;
+  padding: 10px;
+  min-height: 40px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  border-bottom: 0.05px solid #4093ff;
+  border-bottom: 3px solid #4093ff;
   border-radius: 10px 10px 0px 10px;
+  overflow-wrap: anywhere;
+  font-size: 1.3em;
 }
 
 .main-todo .todo-buttons {
@@ -37,11 +40,11 @@
   border-style: none;
   width: 20px;
   height: 20px;
+  background-color: white;
 }
 
-.main-todo .todo-buttons .dropDownButton {
-  -webkit-transform: rotate(90deg);
-          transform: rotate(90deg);
+.main-todo .check-Box {
+  display: none;
 }
 
 .child-todos > .TODO > .main-todo {
@@ -49,6 +52,18 @@
   /* display: flex; */
   margin: 0px auto;
   border: none !important;
+  -webkit-box-pack: justify !important;
+      -ms-flex-pack: justify !important;
+          justify-content: space-between !important;
+  font-size: 1.2em;
+}
+
+.child-todos > .TODO > .main-todo .AddBtn {
+  display: none;
+}
+
+.child-todos > .TODO > .main-todo .check-Box {
+  display: block;
 }
 
 .child-todos > .TODO {

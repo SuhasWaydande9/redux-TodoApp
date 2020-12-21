@@ -11,7 +11,11 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  height: 60px;
+  min-height: 60px;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .main-Nav p {
@@ -22,5 +26,22 @@
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
+}
+
+.main-Nav button {
+  width: 60px;
+  height: 60px;
+  background-color: #5aa0ff;
+  color: white;
+  border: none;
+  outline: none;
+  font-size: 1.1rem;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 315px) {
+  .main-Nav button {
+    width: 100%;
+  }
 }
 /*# sourceMappingURL=Header.css.map */
